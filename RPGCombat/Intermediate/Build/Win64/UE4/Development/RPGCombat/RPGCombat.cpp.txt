@@ -1,0 +1,2 @@
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4\Development\RPGCombat\Definitions.RPGCombat.h
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Source\RPGCombat\RPGCombat.h

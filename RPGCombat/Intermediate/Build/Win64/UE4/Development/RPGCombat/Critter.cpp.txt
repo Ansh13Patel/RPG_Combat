@@ -1,0 +1,5 @@
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4\Development\RPGCombat\Definitions.RPGCombat.h
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Source\RPGCombat\Critter.h
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4\Inc\RPGCombat\Critter.generated.h
+C:\Program Files\Unreal Engine\UE_4.27\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+C:\Program Files\Unreal Engine\UE_4.27\Engine\Intermediate\Build\Win64\UE4\Inc\Engine\CameraComponent.generated.h

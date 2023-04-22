@@ -1,0 +1,56 @@
+﻿  Creating makefile for RPGCombatEditor (no existing makefile)
+  Parsing headers for RPGCombatEditor
+    Running UnrealHeaderTool "D:\My Games\RPG-Combat Cleaned\RPGCombat\RPGCombat.uproject" "D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\RPGCombatEditor\Development\RPGCombatEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\anshp\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for RPGCombatEditor in 19.4373322 seconds
+  Building RPGCombatEditor...
+  Using Visual Studio 2022 14.34.31935 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 43 actions with 8 processes...
+    [1/43] Default.rc2
+    [2/43] SharedPCH.Engine.ShadowErrors.cpp
+    Detected compiler newer than Visual Studio 2019, please update min version checking in WindowsPlatformCompilerSetup.h
+    [3/43] Critter.cpp
+    [4/43] EnemyAnimInstance.cpp
+    [5/43] Explosive.cpp
+    [6/43] ItemStorage.cpp
+    [7/43] Item.cpp
+    [8/43] FloatingPlatform.cpp
+    [9/43] FloorSwitch.cpp
+    [10/43] RPGCombat.cpp
+    [11/43] LevelTransitionVolume.cpp
+    [12/43] RPGCombatGameMode.cpp
+    [13/43] MainPlayerAnimInstance.cpp
+    [14/43] Pickup.cpp
+    [15/43] RPGCombatGameModeBase.cpp
+    [16/43] Enemy.cpp
+    [17/43] RPGCombatSaveGame.cpp
+    [18/43] Critter.gen.cpp
+    [19/43] Explosive.gen.cpp
+    [20/43] EnemyAnimInstance.gen.cpp
+    [21/43] Enemy.gen.cpp
+    [22/43] MainPlayer.cpp
+    [23/43] FloatingPlatform.gen.cpp
+    [24/43] Weapon.cpp
+    [25/43] FloorSwitch.gen.cpp
+    [26/43] Item.gen.cpp
+    [27/43] SpawnVolume.cpp
+    [28/43] ItemStorage.gen.cpp
+    [29/43] LevelTransitionVolume.gen.cpp
+    [30/43] MainPlayerAnimInstance.gen.cpp
+    [31/43] Pickup.gen.cpp
+    [32/43] MainPlayerController.gen.cpp
+    [33/43] RPGCombat.init.gen.cpp
+    [34/43] MainPlayer.gen.cpp
+    [35/43] RPGCombatGameMode.gen.cpp
+    [36/43] RPGCombatGameModeBase.gen.cpp
+    [37/43] SpawnVolume.gen.cpp
+    [38/43] Weapon.gen.cpp
+    [39/43] RPGCombatSaveGame.gen.cpp
+    [40/43] MainPlayerController.cpp
+    [41/43] UE4Editor-RPGCombat-0001.lib
+       Creating library D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4Editor\Development\RPGCombat\UE4Editor-RPGCombat-0001.lib and object D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4Editor\Development\RPGCombat\UE4Editor-RPGCombat-0001.exp
+    [42/43] UE4Editor-RPGCombat-0001.dll
+       Creating library D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4Editor\Development\RPGCombat\UE4Editor-RPGCombat-0001.suppressed.lib and object D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4Editor\Development\RPGCombat\UE4Editor-RPGCombat-0001.suppressed.exp
+    [43/43] RPGCombatEditor.target
+  Total time in Parallel executor: 190.43 seconds
+  Total execution time: 249.06 seconds

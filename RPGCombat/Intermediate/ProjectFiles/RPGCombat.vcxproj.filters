@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\RPGCombat.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{65BA6950-57E9-49AD-B2FE-C6796E58362B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\RPGCombat.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\RPGCombatEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{D13025F6-9F6A-4396-B22A-3D87157D7FEB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\RPGCombat">
+      <UniqueIdentifier>{5FCBCD68-A58E-412C-9272-6EC798FF3882}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\RPGCombat\Critter.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\Critter.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\Enemy.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\Enemy.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\EnemyAnimInstance.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\EnemyAnimInstance.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\Explosive.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\Explosive.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\FloatingPlatform.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\FloatingPlatform.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\FloorSwitch.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\FloorSwitch.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\Item.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\Item.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\ItemStorage.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\ItemStorage.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\LevelTransitionVolume.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\LevelTransitionVolume.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\MainPlayer.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\MainPlayer.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\MainPlayerAnimInstance.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\MainPlayerAnimInstance.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\MainPlayerController.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\MainPlayerController.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\Pickup.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\Pickup.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\RPGCombat\RPGCombat.Build.cs">
+      <Filter>Source\RPGCombat</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\RPGCombat\RPGCombat.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\RPGCombat.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\RPGCombatGameMode.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\RPGCombatGameMode.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\RPGCombatGameModeBase.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\RPGCombatGameModeBase.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\RPGCombatSaveGame.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\RPGCombatSaveGame.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\SpawnVolume.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\SpawnVolume.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RPGCombat\Weapon.cpp">
+      <Filter>Source\RPGCombat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPGCombat\Weapon.h">
+      <Filter>Source\RPGCombat</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

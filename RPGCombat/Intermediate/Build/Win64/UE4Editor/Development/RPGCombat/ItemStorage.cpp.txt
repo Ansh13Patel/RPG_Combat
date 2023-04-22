@@ -1,0 +1,7 @@
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4Editor\Development\RPGCombat\Definitions.RPGCombat.h
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Source\RPGCombat\ItemStorage.h
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Source\RPGCombat\Weapon.h
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Source\RPGCombat\Item.h
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4Editor\Inc\RPGCombat\Item.generated.h
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4Editor\Inc\RPGCombat\Weapon.generated.h
+D:\My Games\RPG-Combat Cleaned\RPGCombat\Intermediate\Build\Win64\UE4Editor\Inc\RPGCombat\ItemStorage.generated.h
