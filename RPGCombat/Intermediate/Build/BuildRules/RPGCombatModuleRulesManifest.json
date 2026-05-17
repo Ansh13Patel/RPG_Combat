@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\My Games\\RPG-Combat Cleaned\\RPGCombat\\Source\\RPGCombat\\RPGCombat.Build.cs",
-		"D:\\My Games\\RPG-Combat Cleaned\\RPGCombat\\Source\\RPGCombat.Target.cs",
-		"D:\\My Games\\RPG-Combat Cleaned\\RPGCombat\\Source\\RPGCombatEditor.Target.cs"
+		"C:\\Unreal Projects\\RPG_Combat\\RPGCombat\\Source\\RPGCombat\\RPGCombat.Build.cs",
+		"C:\\Unreal Projects\\RPG_Combat\\RPGCombat\\Source\\RPGCombat.Target.cs",
+		"C:\\Unreal Projects\\RPG_Combat\\RPGCombat\\Source\\RPGCombatEditor.Target.cs"
 	],
-	"EngineVersion": "4.27.2"
+	"EngineVersion": "5.5.4"
 }

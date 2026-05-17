@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal projects\\rpg_combat\\rpgcombat\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgcombat\\uht\\rpgcombatgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal projects\\rpg_combat\\rpgcombat\\intermediate\\build\\win64\\x64\\rpgcombateditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unreal projects\\rpg_combat\\rpgcombat\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\rpgcombat\\definitions.rpgcombat.h",
+            "c:\\unreal projects\\rpg_combat\\rpgcombat\\source\\rpgcombat\\rpgcombatgamemode.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\unreal projects\\rpg_combat\\rpgcombat\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgcombat\\uht\\rpgcombatgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -4,6 +4,7 @@
 #include "Enemy.h"
 #include "Components/SphereComponent.h"
 #include "AIController.h"
+#include "Navigation/PathFollowingComponent.h"
 #include "MainPlayer.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Components/BoxComponent.h"

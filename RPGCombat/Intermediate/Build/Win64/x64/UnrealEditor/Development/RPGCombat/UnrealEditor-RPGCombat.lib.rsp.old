@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-RPGCombat.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\RPGCombatEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Module.RPGCombat.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Default.rc2.res"
+/OUT:"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\UnrealEditor-RPGCombat.lib"

@@ -1,0 +1,33 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-RPGCombat.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\RPGCombatEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Module.RPGCombat.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Enemy.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\PerModuleInline.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Critter.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Enemy.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\EnemyAnimInstance.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Explosive.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\FloatingPlatform.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\FloorSwitch.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Item.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\ItemStorage.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\LevelTransitionVolume.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\MainPlayer.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\MainPlayerAnimInstance.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\MainPlayerController.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Pickup.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\RPGCombat.init.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\RPGCombatGameMode.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\RPGCombatGameModeBase.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\RPGCombatSaveGame.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\SpawnVolume.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Weapon.gen.cpp.obj"
+"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Default.rc2.res"
+/OUT:"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\UnrealEditor-RPGCombat.lib"

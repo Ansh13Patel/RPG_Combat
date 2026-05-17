@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal projects\\rpg_combat\\rpgcombat\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgcombat\\uht\\itemstorage.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal projects\\rpg_combat\\rpgcombat\\intermediate\\build\\win64\\x64\\rpgcombateditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unreal projects\\rpg_combat\\rpgcombat\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\rpgcombat\\definitions.rpgcombat.h",
+            "c:\\unreal projects\\rpg_combat\\rpgcombat\\source\\rpgcombat\\itemstorage.h",
+            "c:\\unreal projects\\rpg_combat\\rpgcombat\\source\\rpgcombat\\weapon.h",
+            "c:\\unreal projects\\rpg_combat\\rpgcombat\\source\\rpgcombat\\item.h",
+            "c:\\unreal projects\\rpg_combat\\rpgcombat\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgcombat\\uht\\item.generated.h",
+            "c:\\unreal projects\\rpg_combat\\rpgcombat\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgcombat\\uht\\weapon.generated.h",
+            "c:\\unreal projects\\rpg_combat\\rpgcombat\\intermediate\\build\\win64\\unrealeditor\\inc\\rpgcombat\\uht\\itemstorage.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

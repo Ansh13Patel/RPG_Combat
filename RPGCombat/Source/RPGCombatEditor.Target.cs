@@ -5,10 +5,13 @@ using System.Collections.Generic;
 
 public class RPGCombatEditorTarget : TargetRules
 {
-	public RPGCombatEditorTarget( TargetInfo Target) : base(Target)
-	{
-		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "RPGCombat" } );
-	}
+    public RPGCombatEditorTarget(TargetInfo Target) : base(Target)
+    {
+        Type = TargetType.Editor;
+
+        DefaultBuildSettings = BuildSettingsVersion.V5;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
+
+        ExtraModuleNames.Add("RPGCombat");
+    }
 }
