@@ -2,24 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.RPGCombat.cpp.obj": [
-			"Critter.cpp.obj",
-			"EnemyAnimInstance.cpp.obj",
-			"Explosive.cpp.obj",
-			"FloatingPlatform.cpp.obj",
-			"FloorSwitch.cpp.obj",
-			"Item.cpp.obj",
-			"ItemStorage.cpp.obj",
-			"LevelTransitionVolume.cpp.obj",
-			"MainPlayer.cpp.obj",
-			"MainPlayerAnimInstance.cpp.obj",
-			"MainPlayerController.cpp.obj",
-			"Pickup.cpp.obj",
-			"RPGCombat.cpp.obj",
-			"RPGCombatGameMode.cpp.obj",
-			"RPGCombatGameModeBase.cpp.obj",
-			"RPGCombatSaveGame.cpp.obj",
-			"SpawnVolume.cpp.obj",
-			"Weapon.cpp.obj",
 			"Critter.gen.cpp.obj",
 			"Enemy.gen.cpp.obj",
 			"EnemyAnimInstance.gen.cpp.obj",
@@ -40,7 +22,25 @@
 			"SpawnVolume.gen.cpp.obj",
 			"Weapon.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
-			"Enemy.cpp.obj"
+			"Critter.cpp.obj",
+			"Enemy.cpp.obj",
+			"EnemyAnimInstance.cpp.obj",
+			"Explosive.cpp.obj",
+			"FloatingPlatform.cpp.obj",
+			"FloorSwitch.cpp.obj",
+			"Item.cpp.obj",
+			"ItemStorage.cpp.obj",
+			"LevelTransitionVolume.cpp.obj",
+			"MainPlayer.cpp.obj",
+			"MainPlayerAnimInstance.cpp.obj",
+			"MainPlayerController.cpp.obj",
+			"Pickup.cpp.obj",
+			"RPGCombat.cpp.obj",
+			"RPGCombatGameMode.cpp.obj",
+			"RPGCombatGameModeBase.cpp.obj",
+			"RPGCombatSaveGame.cpp.obj",
+			"SpawnVolume.cpp.obj",
+			"Weapon.cpp.obj"
 		]
 	}
 }

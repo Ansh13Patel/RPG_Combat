@@ -6,26 +6,52 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "RPGCombat/Critter.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeCritter() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 ENGINE_API UClass* Z_Construct_UClass_APawn();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 RPGCOMBAT_API UClass* Z_Construct_UClass_ACritter();
 RPGCOMBAT_API UClass* Z_Construct_UClass_ACritter_NoRegister();
 UPackage* Z_Construct_UPackage__Script_RPGCombat();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class ACritter
+// ********** Begin Class ACritter *****************************************************************
 void ACritter::StaticRegisterNativesACritter()
 {
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ACritter);
+FClassRegistrationInfo Z_Registration_Info_UClass_ACritter;
+UClass* ACritter::GetPrivateStaticClass()
+{
+	using TClass = ACritter;
+	if (!Z_Registration_Info_UClass_ACritter.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("Critter"),
+			Z_Registration_Info_UClass_ACritter.InnerSingleton,
+			StaticRegisterNativesACritter,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_ACritter.InnerSingleton;
+}
 UClass* Z_Construct_UClass_ACritter_NoRegister()
 {
-	return ACritter::StaticClass();
+	return ACritter::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_ACritter_Statics
 {
@@ -79,7 +105,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ACritter_Statics::Class
 	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_ACritter_Statics::PropPointers),
 	0,
-	0x009000A4u,
+	0x009001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACritter_Statics::Class_MetaDataParams), Z_Construct_UClass_ACritter_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_ACritter()
@@ -90,24 +116,21 @@ UClass* Z_Construct_UClass_ACritter()
 	}
 	return Z_Registration_Info_UClass_ACritter.OuterSingleton;
 }
-template<> RPGCOMBAT_API UClass* StaticClass<ACritter>()
-{
-	return ACritter::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(ACritter);
 ACritter::~ACritter() {}
-// End Class ACritter
+// ********** End Class ACritter *******************************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Critter_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Critter_h__Script_RPGCombat_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACritter, ACritter::StaticClass, TEXT("ACritter"), &Z_Registration_Info_UClass_ACritter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACritter), 3597981606U) },
+		{ Z_Construct_UClass_ACritter, ACritter::StaticClass, TEXT("ACritter"), &Z_Registration_Info_UClass_ACritter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACritter), 1008859499U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Critter_h_626404526(TEXT("/Script/RPGCombat"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Critter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Critter_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Critter_h__Script_RPGCombat_651364399(TEXT("/Script/RPGCombat"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Critter_h__Script_RPGCombat_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Critter_h__Script_RPGCombat_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

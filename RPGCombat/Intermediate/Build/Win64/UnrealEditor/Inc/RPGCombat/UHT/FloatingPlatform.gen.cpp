@@ -6,26 +6,52 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "RPGCombat/FloatingPlatform.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeFloatingPlatform() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 ENGINE_API UClass* Z_Construct_UClass_AActor();
 ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 RPGCOMBAT_API UClass* Z_Construct_UClass_AFloatingPlatform();
 RPGCOMBAT_API UClass* Z_Construct_UClass_AFloatingPlatform_NoRegister();
 UPackage* Z_Construct_UPackage__Script_RPGCombat();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class AFloatingPlatform
+// ********** Begin Class AFloatingPlatform ********************************************************
 void AFloatingPlatform::StaticRegisterNativesAFloatingPlatform()
 {
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AFloatingPlatform);
+FClassRegistrationInfo Z_Registration_Info_UClass_AFloatingPlatform;
+UClass* AFloatingPlatform::GetPrivateStaticClass()
+{
+	using TClass = AFloatingPlatform;
+	if (!Z_Registration_Info_UClass_AFloatingPlatform.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("FloatingPlatform"),
+			Z_Registration_Info_UClass_AFloatingPlatform.InnerSingleton,
+			StaticRegisterNativesAFloatingPlatform,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_AFloatingPlatform.InnerSingleton;
+}
 UClass* Z_Construct_UClass_AFloatingPlatform_NoRegister()
 {
-	return AFloatingPlatform::StaticClass();
+	return AFloatingPlatform::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_AFloatingPlatform_Statics
 {
@@ -102,7 +128,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AFloatingPlatform_Stati
 	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_AFloatingPlatform_Statics::PropPointers),
 	0,
-	0x009000A4u,
+	0x009001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFloatingPlatform_Statics::Class_MetaDataParams), Z_Construct_UClass_AFloatingPlatform_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_AFloatingPlatform()
@@ -113,24 +139,21 @@ UClass* Z_Construct_UClass_AFloatingPlatform()
 	}
 	return Z_Registration_Info_UClass_AFloatingPlatform.OuterSingleton;
 }
-template<> RPGCOMBAT_API UClass* StaticClass<AFloatingPlatform>()
-{
-	return AFloatingPlatform::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(AFloatingPlatform);
 AFloatingPlatform::~AFloatingPlatform() {}
-// End Class AFloatingPlatform
+// ********** End Class AFloatingPlatform **********************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloatingPlatform_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloatingPlatform_h__Script_RPGCombat_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AFloatingPlatform, AFloatingPlatform::StaticClass, TEXT("AFloatingPlatform"), &Z_Registration_Info_UClass_AFloatingPlatform, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFloatingPlatform), 425056158U) },
+		{ Z_Construct_UClass_AFloatingPlatform, AFloatingPlatform::StaticClass, TEXT("AFloatingPlatform"), &Z_Registration_Info_UClass_AFloatingPlatform, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFloatingPlatform), 2676863994U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloatingPlatform_h_4218053472(TEXT("/Script/RPGCombat"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloatingPlatform_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloatingPlatform_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloatingPlatform_h__Script_RPGCombat_1015009737(TEXT("/Script/RPGCombat"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloatingPlatform_h__Script_RPGCombat_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloatingPlatform_h__Script_RPGCombat_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

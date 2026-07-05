@@ -6,10 +6,12 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "RPGCombat/RPGCombatSaveGame.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeRPGCombatSaveGame() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 ENGINE_API UClass* Z_Construct_UClass_USaveGame();
@@ -17,21 +19,17 @@ RPGCOMBAT_API UClass* Z_Construct_UClass_URPGCombatSaveGame();
 RPGCOMBAT_API UClass* Z_Construct_UClass_URPGCombatSaveGame_NoRegister();
 RPGCOMBAT_API UScriptStruct* Z_Construct_UScriptStruct_FCharacterStats();
 UPackage* Z_Construct_UPackage__Script_RPGCombat();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin ScriptStruct FCharacterStats
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_CharacterStats;
+// ********** Begin ScriptStruct FCharacterStats ***************************************************
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FCharacterStats;
 class UScriptStruct* FCharacterStats::StaticStruct()
 {
-	if (!Z_Registration_Info_UScriptStruct_CharacterStats.OuterSingleton)
+	if (!Z_Registration_Info_UScriptStruct_FCharacterStats.OuterSingleton)
 	{
-		Z_Registration_Info_UScriptStruct_CharacterStats.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FCharacterStats, (UObject*)Z_Construct_UPackage__Script_RPGCombat(), TEXT("CharacterStats"));
+		Z_Registration_Info_UScriptStruct_FCharacterStats.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FCharacterStats, (UObject*)Z_Construct_UPackage__Script_RPGCombat(), TEXT("CharacterStats"));
 	}
-	return Z_Registration_Info_UScriptStruct_CharacterStats.OuterSingleton;
-}
-template<> RPGCOMBAT_API UScriptStruct* StaticStruct<FCharacterStats>()
-{
-	return FCharacterStats::StaticStruct();
+	return Z_Registration_Info_UScriptStruct_FCharacterStats.OuterSingleton;
 }
 struct Z_Construct_UScriptStruct_FCharacterStats_Statics
 {
@@ -129,22 +127,46 @@ const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FCharacterStats
 };
 UScriptStruct* Z_Construct_UScriptStruct_FCharacterStats()
 {
-	if (!Z_Registration_Info_UScriptStruct_CharacterStats.InnerSingleton)
+	if (!Z_Registration_Info_UScriptStruct_FCharacterStats.InnerSingleton)
 	{
-		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_CharacterStats.InnerSingleton, Z_Construct_UScriptStruct_FCharacterStats_Statics::StructParams);
+		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FCharacterStats.InnerSingleton, Z_Construct_UScriptStruct_FCharacterStats_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_CharacterStats.InnerSingleton;
+	return Z_Registration_Info_UScriptStruct_FCharacterStats.InnerSingleton;
 }
-// End ScriptStruct FCharacterStats
+// ********** End ScriptStruct FCharacterStats *****************************************************
 
-// Begin Class URPGCombatSaveGame
+// ********** Begin Class URPGCombatSaveGame *******************************************************
 void URPGCombatSaveGame::StaticRegisterNativesURPGCombatSaveGame()
 {
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(URPGCombatSaveGame);
+FClassRegistrationInfo Z_Registration_Info_UClass_URPGCombatSaveGame;
+UClass* URPGCombatSaveGame::GetPrivateStaticClass()
+{
+	using TClass = URPGCombatSaveGame;
+	if (!Z_Registration_Info_UClass_URPGCombatSaveGame.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("RPGCombatSaveGame"),
+			Z_Registration_Info_UClass_URPGCombatSaveGame.InnerSingleton,
+			StaticRegisterNativesURPGCombatSaveGame,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_URPGCombatSaveGame.InnerSingleton;
+}
 UClass* Z_Construct_UClass_URPGCombatSaveGame_NoRegister()
 {
-	return URPGCombatSaveGame::StaticClass();
+	return URPGCombatSaveGame::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_URPGCombatSaveGame_Statics
 {
@@ -181,7 +203,7 @@ struct Z_Construct_UClass_URPGCombatSaveGame_Statics
 };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_URPGCombatSaveGame_Statics::NewProp_PlayerName = { "PlayerName", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(URPGCombatSaveGame, PlayerName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerName_MetaData), NewProp_PlayerName_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_URPGCombatSaveGame_Statics::NewProp_UserIndex = { "UserIndex", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(URPGCombatSaveGame, UserIndex), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UserIndex_MetaData), NewProp_UserIndex_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_URPGCombatSaveGame_Statics::NewProp_CharacterStats = { "CharacterStats", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(URPGCombatSaveGame, CharacterStats), Z_Construct_UScriptStruct_FCharacterStats, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterStats_MetaData), NewProp_CharacterStats_MetaData) }; // 2864221383
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_URPGCombatSaveGame_Statics::NewProp_CharacterStats = { "CharacterStats", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(URPGCombatSaveGame, CharacterStats), Z_Construct_UScriptStruct_FCharacterStats, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterStats_MetaData), NewProp_CharacterStats_MetaData) }; // 3852539865
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_URPGCombatSaveGame_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URPGCombatSaveGame_Statics::NewProp_PlayerName,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_URPGCombatSaveGame_Statics::NewProp_UserIndex,
@@ -216,27 +238,24 @@ UClass* Z_Construct_UClass_URPGCombatSaveGame()
 	}
 	return Z_Registration_Info_UClass_URPGCombatSaveGame.OuterSingleton;
 }
-template<> RPGCOMBAT_API UClass* StaticClass<URPGCombatSaveGame>()
-{
-	return URPGCombatSaveGame::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(URPGCombatSaveGame);
 URPGCombatSaveGame::~URPGCombatSaveGame() {}
-// End Class URPGCombatSaveGame
+// ********** End Class URPGCombatSaveGame *********************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h__Script_RPGCombat_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FCharacterStats::StaticStruct, Z_Construct_UScriptStruct_FCharacterStats_Statics::NewStructOps, TEXT("CharacterStats"), &Z_Registration_Info_UScriptStruct_CharacterStats, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterStats), 2864221383U) },
+		{ FCharacterStats::StaticStruct, Z_Construct_UScriptStruct_FCharacterStats_Statics::NewStructOps, TEXT("CharacterStats"), &Z_Registration_Info_UScriptStruct_FCharacterStats, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterStats), 3852539865U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_URPGCombatSaveGame, URPGCombatSaveGame::StaticClass, TEXT("URPGCombatSaveGame"), &Z_Registration_Info_UClass_URPGCombatSaveGame, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URPGCombatSaveGame), 3921636210U) },
+		{ Z_Construct_UClass_URPGCombatSaveGame, URPGCombatSaveGame::StaticClass, TEXT("URPGCombatSaveGame"), &Z_Registration_Info_UClass_URPGCombatSaveGame, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(URPGCombatSaveGame), 2627089466U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h_2496029712(TEXT("/Script/RPGCombat"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h__Script_RPGCombat_401470441(TEXT("/Script/RPGCombat"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h__Script_RPGCombat_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h__Script_RPGCombat_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h__Script_RPGCombat_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_RPGCombatSaveGame_h__Script_RPGCombat_Statics::ScriptStructInfo),
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

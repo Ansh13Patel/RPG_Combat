@@ -6,20 +6,22 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "RPGCombat/EnemyAnimInstance.h"
-#include "Runtime/Engine/Classes/Components/SkeletalMeshComponent.h"
+#include "Components/SkeletalMeshComponent.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeEnemyAnimInstance() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UAnimInstance();
 RPGCOMBAT_API UClass* Z_Construct_UClass_AEnemy_NoRegister();
 RPGCOMBAT_API UClass* Z_Construct_UClass_UEnemyAnimInstance();
 RPGCOMBAT_API UClass* Z_Construct_UClass_UEnemyAnimInstance_NoRegister();
 UPackage* Z_Construct_UPackage__Script_RPGCombat();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class UEnemyAnimInstance Function UpdateAnimationProperties
+// ********** Begin Class UEnemyAnimInstance Function UpdateAnimationProperties ********************
 struct Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties_Statics
 {
 #if WITH_METADATA
@@ -30,7 +32,7 @@ struct Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties_Static
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UEnemyAnimInstance, nullptr, "UpdateAnimationProperties", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties_Statics::Function_MetaDataParams), Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UEnemyAnimInstance, nullptr, "UpdateAnimationProperties", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties_Statics::Function_MetaDataParams), Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -47,9 +49,9 @@ DEFINE_FUNCTION(UEnemyAnimInstance::execUpdateAnimationProperties)
 	P_THIS->UpdateAnimationProperties();
 	P_NATIVE_END;
 }
-// End Class UEnemyAnimInstance Function UpdateAnimationProperties
+// ********** End Class UEnemyAnimInstance Function UpdateAnimationProperties **********************
 
-// Begin Class UEnemyAnimInstance
+// ********** Begin Class UEnemyAnimInstance *******************************************************
 void UEnemyAnimInstance::StaticRegisterNativesUEnemyAnimInstance()
 {
 	UClass* Class = UEnemyAnimInstance::StaticClass();
@@ -58,10 +60,34 @@ void UEnemyAnimInstance::StaticRegisterNativesUEnemyAnimInstance()
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UEnemyAnimInstance);
+FClassRegistrationInfo Z_Registration_Info_UClass_UEnemyAnimInstance;
+UClass* UEnemyAnimInstance::GetPrivateStaticClass()
+{
+	using TClass = UEnemyAnimInstance;
+	if (!Z_Registration_Info_UClass_UEnemyAnimInstance.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("EnemyAnimInstance"),
+			Z_Registration_Info_UClass_UEnemyAnimInstance.InnerSingleton,
+			StaticRegisterNativesUEnemyAnimInstance,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_UEnemyAnimInstance.InnerSingleton;
+}
 UClass* Z_Construct_UClass_UEnemyAnimInstance_NoRegister()
 {
-	return UEnemyAnimInstance::StaticClass();
+	return UEnemyAnimInstance::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_UEnemyAnimInstance_Statics
 {
@@ -93,7 +119,7 @@ struct Z_Construct_UClass_UEnemyAnimInstance_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties, "UpdateAnimationProperties" }, // 3367979894
+		{ &Z_Construct_UFunction_UEnemyAnimInstance_UpdateAnimationProperties, "UpdateAnimationProperties" }, // 580210605
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -138,25 +164,22 @@ UClass* Z_Construct_UClass_UEnemyAnimInstance()
 	}
 	return Z_Registration_Info_UClass_UEnemyAnimInstance.OuterSingleton;
 }
-template<> RPGCOMBAT_API UClass* StaticClass<UEnemyAnimInstance>()
-{
-	return UEnemyAnimInstance::StaticClass();
-}
 UEnemyAnimInstance::UEnemyAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(UEnemyAnimInstance);
 UEnemyAnimInstance::~UEnemyAnimInstance() {}
-// End Class UEnemyAnimInstance
+// ********** End Class UEnemyAnimInstance *********************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_EnemyAnimInstance_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_EnemyAnimInstance_h__Script_RPGCombat_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEnemyAnimInstance, UEnemyAnimInstance::StaticClass, TEXT("UEnemyAnimInstance"), &Z_Registration_Info_UClass_UEnemyAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyAnimInstance), 3270241197U) },
+		{ Z_Construct_UClass_UEnemyAnimInstance, UEnemyAnimInstance::StaticClass, TEXT("UEnemyAnimInstance"), &Z_Registration_Info_UClass_UEnemyAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyAnimInstance), 2631568985U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_EnemyAnimInstance_h_516597057(TEXT("/Script/RPGCombat"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_EnemyAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_EnemyAnimInstance_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_EnemyAnimInstance_h__Script_RPGCombat_1814720196(TEXT("/Script/RPGCombat"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_EnemyAnimInstance_h__Script_RPGCombat_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_EnemyAnimInstance_h__Script_RPGCombat_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

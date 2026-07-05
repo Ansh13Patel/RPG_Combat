@@ -5,15 +5,18 @@
 ===========================================================================*/
 
 // IWYU pragma: private, include "MainPlayer.h"
-#include "UObject/ObjectMacros.h"
-#include "UObject/ScriptMacros.h"
 
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef RPGCOMBAT_MainPlayer_generated_h
 #error "MainPlayer.generated.h already included, missing '#pragma once' in MainPlayer.h"
 #endif
 #define RPGCOMBAT_MainPlayer_generated_h
 
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
+// ********** Begin Class AMainPlayer **************************************************************
 #define FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execLoadGame); \
 	DECLARE_FUNCTION(execSaveGame); \
@@ -25,21 +28,23 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execShowPickupLocations);
 
 
+RPGCOMBAT_API UClass* Z_Construct_UClass_AMainPlayer_NoRegister();
+
 #define FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h_33_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMainPlayer(); \
 	friend struct Z_Construct_UClass_AMainPlayer_Statics; \
+	static UClass* GetPrivateStaticClass(); \
+	friend RPGCOMBAT_API UClass* Z_Construct_UClass_AMainPlayer_NoRegister(); \
 public: \
-	DECLARE_CLASS(AMainPlayer, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/RPGCombat"), NO_API) \
+	DECLARE_CLASS2(AMainPlayer, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/RPGCombat"), Z_Construct_UClass_AMainPlayer_NoRegister) \
 	DECLARE_SERIALIZER(AMainPlayer)
 
 
 #define FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h_33_ENHANCED_CONSTRUCTORS \
-private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	AMainPlayer(AMainPlayer&&); \
-	AMainPlayer(const AMainPlayer&); \
-public: \
+	/** Deleted move- and copy-constructors, should never be used */ \
+	AMainPlayer(AMainPlayer&&) = delete; \
+	AMainPlayer(const AMainPlayer&) = delete; \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AMainPlayer); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMainPlayer); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMainPlayer) \
@@ -57,12 +62,14 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> RPGCOMBAT_API UClass* StaticClass<class AMainPlayer>();
+class AMainPlayer;
+
+// ********** End Class AMainPlayer ****************************************************************
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h
 
-
+// ********** Begin Enum EMovementStatus ***********************************************************
 #define FOREACH_ENUM_EMOVEMENTSTATUS(op) \
 	op(EMovementStatus::EMS_Normal) \
 	op(EMovementStatus::EMS_Sprinting) \
@@ -71,7 +78,9 @@ template<> RPGCOMBAT_API UClass* StaticClass<class AMainPlayer>();
 enum class EMovementStatus : uint8;
 template<> struct TIsUEnumClass<EMovementStatus> { enum { Value = true }; };
 template<> RPGCOMBAT_API UEnum* StaticEnum<EMovementStatus>();
+// ********** End Enum EMovementStatus *************************************************************
 
+// ********** Begin Enum EStaminaStatus ************************************************************
 #define FOREACH_ENUM_ESTAMINASTATUS(op) \
 	op(EStaminaStatus::ESS_Normal) \
 	op(EStaminaStatus::ESS_BelowMinimum) \
@@ -81,5 +90,6 @@ template<> RPGCOMBAT_API UEnum* StaticEnum<EMovementStatus>();
 enum class EStaminaStatus : uint8;
 template<> struct TIsUEnumClass<EStaminaStatus> { enum { Value = true }; };
 template<> RPGCOMBAT_API UEnum* StaticEnum<EStaminaStatus>();
+// ********** End Enum EStaminaStatus **************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

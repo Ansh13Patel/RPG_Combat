@@ -1,17 +1,18 @@
-"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Module.RPGCombat.cpp"
-/FI"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\RPGCombatEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Definitions.RPGCombat.h"
-/Yu"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\RPGCombatEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\RPGCombatEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Module.RPGCombat.cpp.obj"
-/experimental:log "C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Module.RPGCombat.cpp.sarif"
-/sourceDependencies "C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\Module.RPGCombat.cpp.dep.json"
-@"C:\Unreal Projects\RPG_Combat\RPGCombat\Intermediate\Build\Win64\x64\UnrealEditor\Development\RPGCombat\RPGCombat.Shared.rsp"
+"C:/Unreal Projects/RPG_Combat/RPGCombat/Intermediate/Build/Win64/x64/UnrealEditor/Development/RPGCombat/Module.RPGCombat.cpp"
+@"C:/Unreal Projects/RPG_Combat/RPGCombat/Intermediate/Build/Win64/x64/UnrealEditor/Development/RPGCombat/RPGCombat.Shared.rsp"
+/FI"C:/Unreal Projects/RPG_Combat/RPGCombat/Intermediate/Build/Win64/x64/RPGCombatEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_5.h"
+/FI"C:/Unreal Projects/RPG_Combat/RPGCombat/Intermediate/Build/Win64/x64/UnrealEditor/Development/RPGCombat/Definitions.RPGCombat.h"
+/Yu"C:/Unreal Projects/RPG_Combat/RPGCombat/Intermediate/Build/Win64/x64/RPGCombatEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_5.h"
+/Fp"C:/Unreal Projects/RPG_Combat/RPGCombat/Intermediate/Build/Win64/x64/RPGCombatEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_5.h.pch"
+/Fo"C:/Unreal Projects/RPG_Combat/RPGCombat/Intermediate/Build/Win64/x64/UnrealEditor/Development/RPGCombat/Module.RPGCombat.cpp.obj"
+/experimental:log "C:/Unreal Projects/RPG_Combat/RPGCombat/Intermediate/Build/Win64/x64/UnrealEditor/Development/RPGCombat/Module.RPGCombat.cpp.sarif"
+/sourceDependencies "C:/Unreal Projects/RPG_Combat/RPGCombat/Intermediate/Build/Win64/x64/UnrealEditor/Development/RPGCombat/Module.RPGCombat.cpp.dep.json"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo
 /Oi
 /FC
+/diagnostics:caret
 /c
 /Gw
 /Gy
@@ -39,15 +40,14 @@
 /fp:fast
 /Zo
 /Zp8
+/W4
 /we4456
 /we4458
 /we4459
-/we4668
 /wd4244
 /wd4838
 /TP
 /GR-
-/W4
 /std:c++20
 /Zc:preprocessor
 /wd5054

@@ -6,23 +6,25 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "RPGCombat/Pickup.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodePickup() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 RPGCOMBAT_API UClass* Z_Construct_UClass_AItem();
 RPGCOMBAT_API UClass* Z_Construct_UClass_AMainPlayer_NoRegister();
 RPGCOMBAT_API UClass* Z_Construct_UClass_APickup();
 RPGCOMBAT_API UClass* Z_Construct_UClass_APickup_NoRegister();
 UPackage* Z_Construct_UPackage__Script_RPGCombat();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class APickup Function OnPickup
+// ********** Begin Class APickup Function OnPickup ************************************************
 struct Pickup_eventOnPickup_Parms
 {
 	AMainPlayer* MainPlayer;
 };
-static const FName NAME_APickup_OnPickup = FName(TEXT("OnPickup"));
+static FName NAME_APickup_OnPickup = FName(TEXT("OnPickup"));
 void APickup::OnPickup(AMainPlayer* MainPlayer)
 {
 	Pickup_eventOnPickup_Parms Parms;
@@ -46,7 +48,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APicku
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APickup_OnPickup_Statics::NewProp_MainPlayer,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_APickup_OnPickup_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APickup_OnPickup_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APickup, nullptr, "OnPickup", nullptr, nullptr, Z_Construct_UFunction_APickup_OnPickup_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APickup_OnPickup_Statics::PropPointers), sizeof(Pickup_eventOnPickup_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APickup_OnPickup_Statics::Function_MetaDataParams), Z_Construct_UFunction_APickup_OnPickup_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APickup_OnPickup_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_APickup, nullptr, "OnPickup", Z_Construct_UFunction_APickup_OnPickup_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APickup_OnPickup_Statics::PropPointers), sizeof(Pickup_eventOnPickup_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APickup_OnPickup_Statics::Function_MetaDataParams), Z_Construct_UFunction_APickup_OnPickup_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Pickup_eventOnPickup_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_APickup_OnPickup()
 {
@@ -57,16 +59,40 @@ UFunction* Z_Construct_UFunction_APickup_OnPickup()
 	}
 	return ReturnFunction;
 }
-// End Class APickup Function OnPickup
+// ********** End Class APickup Function OnPickup **************************************************
 
-// Begin Class APickup
+// ********** Begin Class APickup ******************************************************************
 void APickup::StaticRegisterNativesAPickup()
 {
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(APickup);
+FClassRegistrationInfo Z_Registration_Info_UClass_APickup;
+UClass* APickup::GetPrivateStaticClass()
+{
+	using TClass = APickup;
+	if (!Z_Registration_Info_UClass_APickup.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("Pickup"),
+			Z_Registration_Info_UClass_APickup.InnerSingleton,
+			StaticRegisterNativesAPickup,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_APickup.InnerSingleton;
+}
 UClass* Z_Construct_UClass_APickup_NoRegister()
 {
-	return APickup::StaticClass();
+	return APickup::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_APickup_Statics
 {
@@ -81,7 +107,7 @@ struct Z_Construct_UClass_APickup_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_APickup_OnPickup, "OnPickup" }, // 3736915963
+		{ &Z_Construct_UFunction_APickup_OnPickup, "OnPickup" }, // 1043469895
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -106,7 +132,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_APickup_Statics::ClassP
 	UE_ARRAY_COUNT(FuncInfo),
 	0,
 	0,
-	0x009000A4u,
+	0x009001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::Class_MetaDataParams), Z_Construct_UClass_APickup_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_APickup()
@@ -117,24 +143,21 @@ UClass* Z_Construct_UClass_APickup()
 	}
 	return Z_Registration_Info_UClass_APickup.OuterSingleton;
 }
-template<> RPGCOMBAT_API UClass* StaticClass<APickup>()
-{
-	return APickup::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(APickup);
 APickup::~APickup() {}
-// End Class APickup
+// ********** End Class APickup ********************************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Pickup_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Pickup_h__Script_RPGCombat_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APickup, APickup::StaticClass, TEXT("APickup"), &Z_Registration_Info_UClass_APickup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APickup), 3845005931U) },
+		{ Z_Construct_UClass_APickup, APickup::StaticClass, TEXT("APickup"), &Z_Registration_Info_UClass_APickup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APickup), 3916494424U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Pickup_h_3360225628(TEXT("/Script/RPGCombat"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Pickup_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Pickup_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Pickup_h__Script_RPGCombat_2285610866(TEXT("/Script/RPGCombat"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Pickup_h__Script_RPGCombat_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Pickup_h__Script_RPGCombat_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

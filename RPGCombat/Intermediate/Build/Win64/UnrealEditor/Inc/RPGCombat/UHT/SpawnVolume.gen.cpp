@@ -6,10 +6,12 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "RPGCombat/SpawnVolume.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeSpawnVolume() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
@@ -19,9 +21,9 @@ ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 RPGCOMBAT_API UClass* Z_Construct_UClass_ASpawnVolume();
 RPGCOMBAT_API UClass* Z_Construct_UClass_ASpawnVolume_NoRegister();
 UPackage* Z_Construct_UPackage__Script_RPGCombat();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class ASpawnVolume Function GetSpawnActor
+// ********** Begin Class ASpawnVolume Function GetSpawnActor **************************************
 struct Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics
 {
 	struct SpawnVolume_eventGetSpawnActor_Parms
@@ -43,7 +45,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASpawn
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASpawnVolume, nullptr, "GetSpawnActor", nullptr, nullptr, Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::PropPointers), sizeof(Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::SpawnVolume_eventGetSpawnActor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ASpawnVolume, nullptr, "GetSpawnActor", Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::PropPointers), sizeof(Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::SpawnVolume_eventGetSpawnActor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_ASpawnVolume_GetSpawnActor_Statics::SpawnVolume_eventGetSpawnActor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_ASpawnVolume_GetSpawnActor()
 {
@@ -61,9 +63,9 @@ DEFINE_FUNCTION(ASpawnVolume::execGetSpawnActor)
 	*(TSubclassOf<AActor>*)Z_Param__Result=P_THIS->GetSpawnActor();
 	P_NATIVE_END;
 }
-// End Class ASpawnVolume Function GetSpawnActor
+// ********** End Class ASpawnVolume Function GetSpawnActor ****************************************
 
-// Begin Class ASpawnVolume Function GetSpawnPoint
+// ********** Begin Class ASpawnVolume Function GetSpawnPoint **************************************
 struct Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics
 {
 	struct SpawnVolume_eventGetSpawnPoint_Parms
@@ -85,7 +87,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASpawn
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASpawnVolume, nullptr, "GetSpawnPoint", nullptr, nullptr, Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::PropPointers), sizeof(Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::SpawnVolume_eventGetSpawnPoint_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ASpawnVolume, nullptr, "GetSpawnPoint", Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::PropPointers), sizeof(Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::SpawnVolume_eventGetSpawnPoint_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint_Statics::SpawnVolume_eventGetSpawnPoint_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint()
 {
@@ -103,15 +105,15 @@ DEFINE_FUNCTION(ASpawnVolume::execGetSpawnPoint)
 	*(FVector*)Z_Param__Result=P_THIS->GetSpawnPoint();
 	P_NATIVE_END;
 }
-// End Class ASpawnVolume Function GetSpawnPoint
+// ********** End Class ASpawnVolume Function GetSpawnPoint ****************************************
 
-// Begin Class ASpawnVolume Function SpawnOurActor
+// ********** Begin Class ASpawnVolume Function SpawnOurActor **************************************
 struct SpawnVolume_eventSpawnOurActor_Parms
 {
 	UClass* ToSpawn;
 	FVector Location;
 };
-static const FName NAME_ASpawnVolume_SpawnOurActor = FName(TEXT("SpawnOurActor"));
+static FName NAME_ASpawnVolume_SpawnOurActor = FName(TEXT("SpawnOurActor"));
 void ASpawnVolume::SpawnOurActor(UClass* ToSpawn, FVector const& Location)
 {
 	UFunction* Func = FindFunctionChecked(NAME_ASpawnVolume_SpawnOurActor);
@@ -150,7 +152,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASpawn
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::NewProp_Location,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASpawnVolume, nullptr, "SpawnOurActor", nullptr, nullptr, Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::PropPointers), sizeof(SpawnVolume_eventSpawnOurActor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0CC20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ASpawnVolume, nullptr, "SpawnOurActor", Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::PropPointers), sizeof(SpawnVolume_eventSpawnOurActor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0CC20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpawnVolume_SpawnOurActor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(SpawnVolume_eventSpawnOurActor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_ASpawnVolume_SpawnOurActor()
 {
@@ -170,9 +172,9 @@ DEFINE_FUNCTION(ASpawnVolume::execSpawnOurActor)
 	P_THIS->SpawnOurActor_Implementation(Z_Param_ToSpawn,Z_Param_Out_Location);
 	P_NATIVE_END;
 }
-// End Class ASpawnVolume Function SpawnOurActor
+// ********** End Class ASpawnVolume Function SpawnOurActor ****************************************
 
-// Begin Class ASpawnVolume
+// ********** Begin Class ASpawnVolume *************************************************************
 void ASpawnVolume::StaticRegisterNativesASpawnVolume()
 {
 	UClass* Class = ASpawnVolume::StaticClass();
@@ -183,10 +185,34 @@ void ASpawnVolume::StaticRegisterNativesASpawnVolume()
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ASpawnVolume);
+FClassRegistrationInfo Z_Registration_Info_UClass_ASpawnVolume;
+UClass* ASpawnVolume::GetPrivateStaticClass()
+{
+	using TClass = ASpawnVolume;
+	if (!Z_Registration_Info_UClass_ASpawnVolume.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("SpawnVolume"),
+			Z_Registration_Info_UClass_ASpawnVolume.InnerSingleton,
+			StaticRegisterNativesASpawnVolume,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_ASpawnVolume.InnerSingleton;
+}
 UClass* Z_Construct_UClass_ASpawnVolume_NoRegister()
 {
-	return ASpawnVolume::StaticClass();
+	return ASpawnVolume::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_ASpawnVolume_Statics
 {
@@ -225,9 +251,9 @@ struct Z_Construct_UClass_ASpawnVolume_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ASpawnVolume_GetSpawnActor, "GetSpawnActor" }, // 372869045
-		{ &Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint, "GetSpawnPoint" }, // 3378709203
-		{ &Z_Construct_UFunction_ASpawnVolume_SpawnOurActor, "SpawnOurActor" }, // 955285369
+		{ &Z_Construct_UFunction_ASpawnVolume_GetSpawnActor, "GetSpawnActor" }, // 2620482140
+		{ &Z_Construct_UFunction_ASpawnVolume_GetSpawnPoint, "GetSpawnPoint" }, // 1617672399
+		{ &Z_Construct_UFunction_ASpawnVolume_SpawnOurActor, "SpawnOurActor" }, // 499655669
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -265,7 +291,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ASpawnVolume_Statics::C
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_ASpawnVolume_Statics::PropPointers),
 	0,
-	0x009000A4u,
+	0x009001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ASpawnVolume_Statics::Class_MetaDataParams), Z_Construct_UClass_ASpawnVolume_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_ASpawnVolume()
@@ -276,24 +302,21 @@ UClass* Z_Construct_UClass_ASpawnVolume()
 	}
 	return Z_Registration_Info_UClass_ASpawnVolume.OuterSingleton;
 }
-template<> RPGCOMBAT_API UClass* StaticClass<ASpawnVolume>()
-{
-	return ASpawnVolume::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(ASpawnVolume);
 ASpawnVolume::~ASpawnVolume() {}
-// End Class ASpawnVolume
+// ********** End Class ASpawnVolume ***************************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_SpawnVolume_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_SpawnVolume_h__Script_RPGCombat_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASpawnVolume, ASpawnVolume::StaticClass, TEXT("ASpawnVolume"), &Z_Registration_Info_UClass_ASpawnVolume, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpawnVolume), 3029885637U) },
+		{ Z_Construct_UClass_ASpawnVolume, ASpawnVolume::StaticClass, TEXT("ASpawnVolume"), &Z_Registration_Info_UClass_ASpawnVolume, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpawnVolume), 3227883734U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_SpawnVolume_h_1836055240(TEXT("/Script/RPGCombat"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_SpawnVolume_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_SpawnVolume_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_SpawnVolume_h__Script_RPGCombat_3360335686(TEXT("/Script/RPGCombat"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_SpawnVolume_h__Script_RPGCombat_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_SpawnVolume_h__Script_RPGCombat_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

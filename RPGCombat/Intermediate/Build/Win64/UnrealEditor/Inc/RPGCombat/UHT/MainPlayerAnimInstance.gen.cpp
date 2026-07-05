@@ -6,20 +6,22 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "RPGCombat/MainPlayerAnimInstance.h"
-#include "Runtime/Engine/Classes/Components/SkeletalMeshComponent.h"
+#include "Components/SkeletalMeshComponent.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeMainPlayerAnimInstance() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UAnimInstance();
 RPGCOMBAT_API UClass* Z_Construct_UClass_AMainPlayer_NoRegister();
 RPGCOMBAT_API UClass* Z_Construct_UClass_UMainPlayerAnimInstance();
 RPGCOMBAT_API UClass* Z_Construct_UClass_UMainPlayerAnimInstance_NoRegister();
 UPackage* Z_Construct_UPackage__Script_RPGCombat();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class UMainPlayerAnimInstance Function UpdateAnimationProperties
+// ********** Begin Class UMainPlayerAnimInstance Function UpdateAnimationProperties ***************
 struct Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties_Statics
 {
 #if WITH_METADATA
@@ -30,7 +32,7 @@ struct Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties_S
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMainPlayerAnimInstance, nullptr, "UpdateAnimationProperties", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMainPlayerAnimInstance, nullptr, "UpdateAnimationProperties", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -47,9 +49,9 @@ DEFINE_FUNCTION(UMainPlayerAnimInstance::execUpdateAnimationProperties)
 	P_THIS->UpdateAnimationProperties();
 	P_NATIVE_END;
 }
-// End Class UMainPlayerAnimInstance Function UpdateAnimationProperties
+// ********** End Class UMainPlayerAnimInstance Function UpdateAnimationProperties *****************
 
-// Begin Class UMainPlayerAnimInstance
+// ********** Begin Class UMainPlayerAnimInstance **************************************************
 void UMainPlayerAnimInstance::StaticRegisterNativesUMainPlayerAnimInstance()
 {
 	UClass* Class = UMainPlayerAnimInstance::StaticClass();
@@ -58,10 +60,34 @@ void UMainPlayerAnimInstance::StaticRegisterNativesUMainPlayerAnimInstance()
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UMainPlayerAnimInstance);
+FClassRegistrationInfo Z_Registration_Info_UClass_UMainPlayerAnimInstance;
+UClass* UMainPlayerAnimInstance::GetPrivateStaticClass()
+{
+	using TClass = UMainPlayerAnimInstance;
+	if (!Z_Registration_Info_UClass_UMainPlayerAnimInstance.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("MainPlayerAnimInstance"),
+			Z_Registration_Info_UClass_UMainPlayerAnimInstance.InnerSingleton,
+			StaticRegisterNativesUMainPlayerAnimInstance,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_UMainPlayerAnimInstance.InnerSingleton;
+}
 UClass* Z_Construct_UClass_UMainPlayerAnimInstance_NoRegister()
 {
-	return UMainPlayerAnimInstance::StaticClass();
+	return UMainPlayerAnimInstance::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_UMainPlayerAnimInstance_Statics
 {
@@ -99,7 +125,7 @@ struct Z_Construct_UClass_UMainPlayerAnimInstance_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties, "UpdateAnimationProperties" }, // 3588849144
+		{ &Z_Construct_UFunction_UMainPlayerAnimInstance_UpdateAnimationProperties, "UpdateAnimationProperties" }, // 3519970105
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -150,25 +176,22 @@ UClass* Z_Construct_UClass_UMainPlayerAnimInstance()
 	}
 	return Z_Registration_Info_UClass_UMainPlayerAnimInstance.OuterSingleton;
 }
-template<> RPGCOMBAT_API UClass* StaticClass<UMainPlayerAnimInstance>()
-{
-	return UMainPlayerAnimInstance::StaticClass();
-}
 UMainPlayerAnimInstance::UMainPlayerAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(UMainPlayerAnimInstance);
 UMainPlayerAnimInstance::~UMainPlayerAnimInstance() {}
-// End Class UMainPlayerAnimInstance
+// ********** End Class UMainPlayerAnimInstance ****************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerAnimInstance_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerAnimInstance_h__Script_RPGCombat_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMainPlayerAnimInstance, UMainPlayerAnimInstance::StaticClass, TEXT("UMainPlayerAnimInstance"), &Z_Registration_Info_UClass_UMainPlayerAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMainPlayerAnimInstance), 1327439920U) },
+		{ Z_Construct_UClass_UMainPlayerAnimInstance, UMainPlayerAnimInstance::StaticClass, TEXT("UMainPlayerAnimInstance"), &Z_Registration_Info_UClass_UMainPlayerAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMainPlayerAnimInstance), 1710068399U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerAnimInstance_h_832012534(TEXT("/Script/RPGCombat"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerAnimInstance_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerAnimInstance_h__Script_RPGCombat_827053365(TEXT("/Script/RPGCombat"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerAnimInstance_h__Script_RPGCombat_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerAnimInstance_h__Script_RPGCombat_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

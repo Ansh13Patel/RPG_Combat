@@ -6,11 +6,13 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "RPGCombat/FloorSwitch.h"
-#include "Runtime/Engine/Classes/Engine/HitResult.h"
+#include "Engine/HitResult.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeFloorSwitch() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 ENGINE_API UClass* Z_Construct_UClass_AActor();
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
@@ -21,10 +23,10 @@ ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 RPGCOMBAT_API UClass* Z_Construct_UClass_AFloorSwitch();
 RPGCOMBAT_API UClass* Z_Construct_UClass_AFloorSwitch_NoRegister();
 UPackage* Z_Construct_UPackage__Script_RPGCombat();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class AFloorSwitch Function LowerDoor
-static const FName NAME_AFloorSwitch_LowerDoor = FName(TEXT("LowerDoor"));
+// ********** Begin Class AFloorSwitch Function LowerDoor ******************************************
+static FName NAME_AFloorSwitch_LowerDoor = FName(TEXT("LowerDoor"));
 void AFloorSwitch::LowerDoor()
 {
 	UFunction* Func = FindFunctionChecked(NAME_AFloorSwitch_LowerDoor);
@@ -40,7 +42,7 @@ struct Z_Construct_UFunction_AFloorSwitch_LowerDoor_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_LowerDoor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "LowerDoor", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_LowerDoor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_LowerDoor_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_LowerDoor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "LowerDoor", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_LowerDoor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_LowerDoor_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AFloorSwitch_LowerDoor()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -50,10 +52,10 @@ UFunction* Z_Construct_UFunction_AFloorSwitch_LowerDoor()
 	}
 	return ReturnFunction;
 }
-// End Class AFloorSwitch Function LowerDoor
+// ********** End Class AFloorSwitch Function LowerDoor ********************************************
 
-// Begin Class AFloorSwitch Function LowerFloorSwitch
-static const FName NAME_AFloorSwitch_LowerFloorSwitch = FName(TEXT("LowerFloorSwitch"));
+// ********** Begin Class AFloorSwitch Function LowerFloorSwitch ***********************************
+static FName NAME_AFloorSwitch_LowerFloorSwitch = FName(TEXT("LowerFloorSwitch"));
 void AFloorSwitch::LowerFloorSwitch()
 {
 	UFunction* Func = FindFunctionChecked(NAME_AFloorSwitch_LowerFloorSwitch);
@@ -69,7 +71,7 @@ struct Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "LowerFloorSwitch", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "LowerFloorSwitch", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -79,9 +81,9 @@ UFunction* Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch()
 	}
 	return ReturnFunction;
 }
-// End Class AFloorSwitch Function LowerFloorSwitch
+// ********** End Class AFloorSwitch Function LowerFloorSwitch *************************************
 
-// Begin Class AFloorSwitch Function OnBeginOverlap
+// ********** Begin Class AFloorSwitch Function OnBeginOverlap *************************************
 struct Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics
 {
 	struct FloorSwitch_eventOnBeginOverlap_Parms
@@ -126,7 +128,7 @@ void Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::NewProp_bFromSwe
 	((FloorSwitch_eventOnBeginOverlap_Parms*)Obj)->bFromSweep = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::NewProp_bFromSweep = { "bFromSweep", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FloorSwitch_eventOnBeginOverlap_Parms), &Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::NewProp_bFromSweep_SetBit, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::NewProp_SweepResult = { "SweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FloorSwitch_eventOnBeginOverlap_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SweepResult_MetaData), NewProp_SweepResult_MetaData) }; // 4100991306
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::NewProp_SweepResult = { "SweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FloorSwitch_eventOnBeginOverlap_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SweepResult_MetaData), NewProp_SweepResult_MetaData) }; // 267591329
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::NewProp_OverlappedComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::NewProp_OtherActor,
@@ -136,7 +138,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFloor
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::NewProp_SweepResult,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "OnBeginOverlap", nullptr, nullptr, Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::PropPointers), sizeof(Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::FloorSwitch_eventOnBeginOverlap_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "OnBeginOverlap", Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::PropPointers), sizeof(Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::FloorSwitch_eventOnBeginOverlap_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap_Statics::FloorSwitch_eventOnBeginOverlap_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap()
 {
@@ -160,9 +162,9 @@ DEFINE_FUNCTION(AFloorSwitch::execOnBeginOverlap)
 	P_THIS->OnBeginOverlap(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
 	P_NATIVE_END;
 }
-// End Class AFloorSwitch Function OnBeginOverlap
+// ********** End Class AFloorSwitch Function OnBeginOverlap ***************************************
 
-// Begin Class AFloorSwitch Function OnEndOverlap
+// ********** Begin Class AFloorSwitch Function OnEndOverlap ***************************************
 struct Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics
 {
 	struct FloorSwitch_eventOnEndOverlap_Parms
@@ -201,7 +203,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFloor
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::NewProp_OtherBodyIndex,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "OnEndOverlap", nullptr, nullptr, Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::PropPointers), sizeof(Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::FloorSwitch_eventOnEndOverlap_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "OnEndOverlap", Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::PropPointers), sizeof(Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::FloorSwitch_eventOnEndOverlap_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AFloorSwitch_OnEndOverlap_Statics::FloorSwitch_eventOnEndOverlap_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AFloorSwitch_OnEndOverlap()
 {
@@ -223,10 +225,10 @@ DEFINE_FUNCTION(AFloorSwitch::execOnEndOverlap)
 	P_THIS->OnEndOverlap(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex);
 	P_NATIVE_END;
 }
-// End Class AFloorSwitch Function OnEndOverlap
+// ********** End Class AFloorSwitch Function OnEndOverlap *****************************************
 
-// Begin Class AFloorSwitch Function RaiseDoor
-static const FName NAME_AFloorSwitch_RaiseDoor = FName(TEXT("RaiseDoor"));
+// ********** Begin Class AFloorSwitch Function RaiseDoor ******************************************
+static FName NAME_AFloorSwitch_RaiseDoor = FName(TEXT("RaiseDoor"));
 void AFloorSwitch::RaiseDoor()
 {
 	UFunction* Func = FindFunctionChecked(NAME_AFloorSwitch_RaiseDoor);
@@ -242,7 +244,7 @@ struct Z_Construct_UFunction_AFloorSwitch_RaiseDoor_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_RaiseDoor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "RaiseDoor", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_RaiseDoor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_RaiseDoor_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_RaiseDoor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "RaiseDoor", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_RaiseDoor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_RaiseDoor_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AFloorSwitch_RaiseDoor()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -252,10 +254,10 @@ UFunction* Z_Construct_UFunction_AFloorSwitch_RaiseDoor()
 	}
 	return ReturnFunction;
 }
-// End Class AFloorSwitch Function RaiseDoor
+// ********** End Class AFloorSwitch Function RaiseDoor ********************************************
 
-// Begin Class AFloorSwitch Function RaiseFloorSwitch
-static const FName NAME_AFloorSwitch_RaiseFloorSwitch = FName(TEXT("RaiseFloorSwitch"));
+// ********** Begin Class AFloorSwitch Function RaiseFloorSwitch ***********************************
+static FName NAME_AFloorSwitch_RaiseFloorSwitch = FName(TEXT("RaiseFloorSwitch"));
 void AFloorSwitch::RaiseFloorSwitch()
 {
 	UFunction* Func = FindFunctionChecked(NAME_AFloorSwitch_RaiseFloorSwitch);
@@ -271,7 +273,7 @@ struct Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "RaiseFloorSwitch", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "RaiseFloorSwitch", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -281,9 +283,9 @@ UFunction* Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch()
 	}
 	return ReturnFunction;
 }
-// End Class AFloorSwitch Function RaiseFloorSwitch
+// ********** End Class AFloorSwitch Function RaiseFloorSwitch *************************************
 
-// Begin Class AFloorSwitch Function UpdateDoorLocation
+// ********** Begin Class AFloorSwitch Function UpdateDoorLocation *********************************
 struct Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics
 {
 	struct FloorSwitch_eventUpdateDoorLocation_Parms
@@ -305,7 +307,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFloor
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::NewProp_Z,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "UpdateDoorLocation", nullptr, nullptr, Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::PropPointers), sizeof(Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::FloorSwitch_eventUpdateDoorLocation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "UpdateDoorLocation", Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::PropPointers), sizeof(Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::FloorSwitch_eventUpdateDoorLocation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation_Statics::FloorSwitch_eventUpdateDoorLocation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation()
 {
@@ -324,9 +326,9 @@ DEFINE_FUNCTION(AFloorSwitch::execUpdateDoorLocation)
 	P_THIS->UpdateDoorLocation(Z_Param_Z);
 	P_NATIVE_END;
 }
-// End Class AFloorSwitch Function UpdateDoorLocation
+// ********** End Class AFloorSwitch Function UpdateDoorLocation ***********************************
 
-// Begin Class AFloorSwitch Function UpdateFloorSwitchLocation
+// ********** Begin Class AFloorSwitch Function UpdateFloorSwitchLocation **************************
 struct Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics
 {
 	struct FloorSwitch_eventUpdateFloorSwitchLocation_Parms
@@ -348,7 +350,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFloor
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::NewProp_Z,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "UpdateFloorSwitchLocation", nullptr, nullptr, Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::PropPointers), sizeof(Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::FloorSwitch_eventUpdateFloorSwitchLocation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AFloorSwitch, nullptr, "UpdateFloorSwitchLocation", Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::PropPointers), sizeof(Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::FloorSwitch_eventUpdateFloorSwitchLocation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::Function_MetaDataParams), Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation_Statics::FloorSwitch_eventUpdateFloorSwitchLocation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation()
 {
@@ -367,9 +369,9 @@ DEFINE_FUNCTION(AFloorSwitch::execUpdateFloorSwitchLocation)
 	P_THIS->UpdateFloorSwitchLocation(Z_Param_Z);
 	P_NATIVE_END;
 }
-// End Class AFloorSwitch Function UpdateFloorSwitchLocation
+// ********** End Class AFloorSwitch Function UpdateFloorSwitchLocation ****************************
 
-// Begin Class AFloorSwitch
+// ********** Begin Class AFloorSwitch *************************************************************
 void AFloorSwitch::StaticRegisterNativesAFloorSwitch()
 {
 	UClass* Class = AFloorSwitch::StaticClass();
@@ -381,10 +383,34 @@ void AFloorSwitch::StaticRegisterNativesAFloorSwitch()
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AFloorSwitch);
+FClassRegistrationInfo Z_Registration_Info_UClass_AFloorSwitch;
+UClass* AFloorSwitch::GetPrivateStaticClass()
+{
+	using TClass = AFloorSwitch;
+	if (!Z_Registration_Info_UClass_AFloorSwitch.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("FloorSwitch"),
+			Z_Registration_Info_UClass_AFloorSwitch.InnerSingleton,
+			StaticRegisterNativesAFloorSwitch,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_AFloorSwitch.InnerSingleton;
+}
 UClass* Z_Construct_UClass_AFloorSwitch_NoRegister()
 {
-	return AFloorSwitch::StaticClass();
+	return AFloorSwitch::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_AFloorSwitch_Statics
 {
@@ -448,14 +474,14 @@ struct Z_Construct_UClass_AFloorSwitch_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AFloorSwitch_LowerDoor, "LowerDoor" }, // 1955528555
-		{ &Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch, "LowerFloorSwitch" }, // 2082747969
-		{ &Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap, "OnBeginOverlap" }, // 1084996012
-		{ &Z_Construct_UFunction_AFloorSwitch_OnEndOverlap, "OnEndOverlap" }, // 4069350344
-		{ &Z_Construct_UFunction_AFloorSwitch_RaiseDoor, "RaiseDoor" }, // 914147151
-		{ &Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch, "RaiseFloorSwitch" }, // 1937588423
-		{ &Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation, "UpdateDoorLocation" }, // 2289250932
-		{ &Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation, "UpdateFloorSwitchLocation" }, // 309644568
+		{ &Z_Construct_UFunction_AFloorSwitch_LowerDoor, "LowerDoor" }, // 1528963324
+		{ &Z_Construct_UFunction_AFloorSwitch_LowerFloorSwitch, "LowerFloorSwitch" }, // 3664745715
+		{ &Z_Construct_UFunction_AFloorSwitch_OnBeginOverlap, "OnBeginOverlap" }, // 321217414
+		{ &Z_Construct_UFunction_AFloorSwitch_OnEndOverlap, "OnEndOverlap" }, // 4143391471
+		{ &Z_Construct_UFunction_AFloorSwitch_RaiseDoor, "RaiseDoor" }, // 2849092091
+		{ &Z_Construct_UFunction_AFloorSwitch_RaiseFloorSwitch, "RaiseFloorSwitch" }, // 3229522790
+		{ &Z_Construct_UFunction_AFloorSwitch_UpdateDoorLocation, "UpdateDoorLocation" }, // 1280142088
+		{ &Z_Construct_UFunction_AFloorSwitch_UpdateFloorSwitchLocation, "UpdateFloorSwitchLocation" }, // 3815980967
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -495,7 +521,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AFloorSwitch_Statics::C
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AFloorSwitch_Statics::PropPointers),
 	0,
-	0x009000A4u,
+	0x009001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFloorSwitch_Statics::Class_MetaDataParams), Z_Construct_UClass_AFloorSwitch_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_AFloorSwitch()
@@ -506,24 +532,21 @@ UClass* Z_Construct_UClass_AFloorSwitch()
 	}
 	return Z_Registration_Info_UClass_AFloorSwitch.OuterSingleton;
 }
-template<> RPGCOMBAT_API UClass* StaticClass<AFloorSwitch>()
-{
-	return AFloorSwitch::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(AFloorSwitch);
 AFloorSwitch::~AFloorSwitch() {}
-// End Class AFloorSwitch
+// ********** End Class AFloorSwitch ***************************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloorSwitch_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloorSwitch_h__Script_RPGCombat_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AFloorSwitch, AFloorSwitch::StaticClass, TEXT("AFloorSwitch"), &Z_Registration_Info_UClass_AFloorSwitch, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFloorSwitch), 3351622833U) },
+		{ Z_Construct_UClass_AFloorSwitch, AFloorSwitch::StaticClass, TEXT("AFloorSwitch"), &Z_Registration_Info_UClass_AFloorSwitch, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFloorSwitch), 162873852U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloorSwitch_h_4224220229(TEXT("/Script/RPGCombat"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloorSwitch_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloorSwitch_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloorSwitch_h__Script_RPGCombat_989339138(TEXT("/Script/RPGCombat"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloorSwitch_h__Script_RPGCombat_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_FloorSwitch_h__Script_RPGCombat_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -6,20 +6,22 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "RPGCombat/MainPlayerController.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeMainPlayerController() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_APlayerController();
 RPGCOMBAT_API UClass* Z_Construct_UClass_AMainPlayerController();
 RPGCOMBAT_API UClass* Z_Construct_UClass_AMainPlayerController_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 UPackage* Z_Construct_UPackage__Script_RPGCombat();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class AMainPlayerController Function DisplayPauseMenu
-static const FName NAME_AMainPlayerController_DisplayPauseMenu = FName(TEXT("DisplayPauseMenu"));
+// ********** Begin Class AMainPlayerController Function DisplayPauseMenu **************************
+static FName NAME_AMainPlayerController_DisplayPauseMenu = FName(TEXT("DisplayPauseMenu"));
 void AMainPlayerController::DisplayPauseMenu()
 {
 	UFunction* Func = FindFunctionChecked(NAME_AMainPlayerController_DisplayPauseMenu);
@@ -42,7 +44,7 @@ struct Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayerController, nullptr, "DisplayPauseMenu", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMainPlayerController, nullptr, "DisplayPauseMenu", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -59,10 +61,10 @@ DEFINE_FUNCTION(AMainPlayerController::execDisplayPauseMenu)
 	P_THIS->DisplayPauseMenu_Implementation();
 	P_NATIVE_END;
 }
-// End Class AMainPlayerController Function DisplayPauseMenu
+// ********** End Class AMainPlayerController Function DisplayPauseMenu ****************************
 
-// Begin Class AMainPlayerController Function RemovePauseMenu
-static const FName NAME_AMainPlayerController_RemovePauseMenu = FName(TEXT("RemovePauseMenu"));
+// ********** Begin Class AMainPlayerController Function RemovePauseMenu ***************************
+static FName NAME_AMainPlayerController_RemovePauseMenu = FName(TEXT("RemovePauseMenu"));
 void AMainPlayerController::RemovePauseMenu()
 {
 	UFunction* Func = FindFunctionChecked(NAME_AMainPlayerController_RemovePauseMenu);
@@ -85,7 +87,7 @@ struct Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayerController, nullptr, "RemovePauseMenu", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMainPlayerController, nullptr, "RemovePauseMenu", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -102,9 +104,9 @@ DEFINE_FUNCTION(AMainPlayerController::execRemovePauseMenu)
 	P_THIS->RemovePauseMenu_Implementation();
 	P_NATIVE_END;
 }
-// End Class AMainPlayerController Function RemovePauseMenu
+// ********** End Class AMainPlayerController Function RemovePauseMenu *****************************
 
-// Begin Class AMainPlayerController
+// ********** Begin Class AMainPlayerController ****************************************************
 void AMainPlayerController::StaticRegisterNativesAMainPlayerController()
 {
 	UClass* Class = AMainPlayerController::StaticClass();
@@ -114,10 +116,34 @@ void AMainPlayerController::StaticRegisterNativesAMainPlayerController()
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AMainPlayerController);
+FClassRegistrationInfo Z_Registration_Info_UClass_AMainPlayerController;
+UClass* AMainPlayerController::GetPrivateStaticClass()
+{
+	using TClass = AMainPlayerController;
+	if (!Z_Registration_Info_UClass_AMainPlayerController.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("MainPlayerController"),
+			Z_Registration_Info_UClass_AMainPlayerController.InnerSingleton,
+			StaticRegisterNativesAMainPlayerController,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_AMainPlayerController.InnerSingleton;
+}
 UClass* Z_Construct_UClass_AMainPlayerController_NoRegister()
 {
-	return AMainPlayerController::StaticClass();
+	return AMainPlayerController::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_AMainPlayerController_Statics
 {
@@ -167,8 +193,8 @@ struct Z_Construct_UClass_AMainPlayerController_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu, "DisplayPauseMenu" }, // 2181579209
-		{ &Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu, "RemovePauseMenu" }, // 4269173681
+		{ &Z_Construct_UFunction_AMainPlayerController_DisplayPauseMenu, "DisplayPauseMenu" }, // 2547165467
+		{ &Z_Construct_UFunction_AMainPlayerController_RemovePauseMenu, "RemovePauseMenu" }, // 1445357418
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -208,7 +234,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AMainPlayerController_S
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AMainPlayerController_Statics::PropPointers),
 	0,
-	0x009002A4u,
+	0x009003A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainPlayerController_Statics::Class_MetaDataParams), Z_Construct_UClass_AMainPlayerController_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_AMainPlayerController()
@@ -219,25 +245,22 @@ UClass* Z_Construct_UClass_AMainPlayerController()
 	}
 	return Z_Registration_Info_UClass_AMainPlayerController.OuterSingleton;
 }
-template<> RPGCOMBAT_API UClass* StaticClass<AMainPlayerController>()
-{
-	return AMainPlayerController::StaticClass();
-}
 AMainPlayerController::AMainPlayerController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(AMainPlayerController);
 AMainPlayerController::~AMainPlayerController() {}
-// End Class AMainPlayerController
+// ********** End Class AMainPlayerController ******************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerController_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerController_h__Script_RPGCombat_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMainPlayerController, AMainPlayerController::StaticClass, TEXT("AMainPlayerController"), &Z_Registration_Info_UClass_AMainPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainPlayerController), 2000288148U) },
+		{ Z_Construct_UClass_AMainPlayerController, AMainPlayerController::StaticClass, TEXT("AMainPlayerController"), &Z_Registration_Info_UClass_AMainPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainPlayerController), 913433877U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerController_h_3427817843(TEXT("/Script/RPGCombat"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerController_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerController_h__Script_RPGCombat_2839186927(TEXT("/Script/RPGCombat"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerController_h__Script_RPGCombat_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayerController_h__Script_RPGCombat_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

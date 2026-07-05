@@ -5,38 +5,44 @@
 ===========================================================================*/
 
 // IWYU pragma: private, include "Item.h"
-#include "UObject/ObjectMacros.h"
-#include "UObject/ScriptMacros.h"
 
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class AActor;
-class UPrimitiveComponent;
-struct FHitResult;
 #ifdef RPGCOMBAT_Item_generated_h
 #error "Item.generated.h already included, missing '#pragma once' in Item.h"
 #endif
 #define RPGCOMBAT_Item_generated_h
 
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
+
+// ********** Begin Class AItem ********************************************************************
 #define FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Item_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
+RPGCOMBAT_API UClass* Z_Construct_UClass_AItem_NoRegister();
+
 #define FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Item_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAItem(); \
 	friend struct Z_Construct_UClass_AItem_Statics; \
+	static UClass* GetPrivateStaticClass(); \
+	friend RPGCOMBAT_API UClass* Z_Construct_UClass_AItem_NoRegister(); \
 public: \
-	DECLARE_CLASS(AItem, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/RPGCombat"), NO_API) \
+	DECLARE_CLASS2(AItem, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/RPGCombat"), Z_Construct_UClass_AItem_NoRegister) \
 	DECLARE_SERIALIZER(AItem)
 
 
 #define FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Item_h_12_ENHANCED_CONSTRUCTORS \
-private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	AItem(AItem&&); \
-	AItem(const AItem&); \
-public: \
+	/** Deleted move- and copy-constructors, should never be used */ \
+	AItem(AItem&&) = delete; \
+	AItem(const AItem&) = delete; \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AItem); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AItem); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AItem) \
@@ -54,10 +60,11 @@ private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> RPGCOMBAT_API UClass* StaticClass<class AItem>();
+class AItem;
+
+// ********** End Class AItem **********************************************************************
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_Item_h
-
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

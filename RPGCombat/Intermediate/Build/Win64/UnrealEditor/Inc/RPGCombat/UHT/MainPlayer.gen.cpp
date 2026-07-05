@@ -6,10 +6,12 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "RPGCombat/MainPlayer.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeMainPlayer() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
@@ -28,9 +30,9 @@ RPGCOMBAT_API UClass* Z_Construct_UClass_AWeapon_NoRegister();
 RPGCOMBAT_API UEnum* Z_Construct_UEnum_RPGCombat_EMovementStatus();
 RPGCOMBAT_API UEnum* Z_Construct_UEnum_RPGCombat_EStaminaStatus();
 UPackage* Z_Construct_UPackage__Script_RPGCombat();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Enum EMovementStatus
+// ********** Begin Enum EMovementStatus ***********************************************************
 static FEnumRegistrationInfo Z_Registration_Info_UEnum_EMovementStatus;
 static UEnum* EMovementStatus_StaticEnum()
 {
@@ -88,9 +90,9 @@ UEnum* Z_Construct_UEnum_RPGCombat_EMovementStatus()
 	}
 	return Z_Registration_Info_UEnum_EMovementStatus.InnerSingleton;
 }
-// End Enum EMovementStatus
+// ********** End Enum EMovementStatus *************************************************************
 
-// Begin Enum EStaminaStatus
+// ********** Begin Enum EStaminaStatus ************************************************************
 static FEnumRegistrationInfo Z_Registration_Info_UEnum_EStaminaStatus;
 static UEnum* EStaminaStatus_StaticEnum()
 {
@@ -151,9 +153,9 @@ UEnum* Z_Construct_UEnum_RPGCombat_EStaminaStatus()
 	}
 	return Z_Registration_Info_UEnum_EStaminaStatus.InnerSingleton;
 }
-// End Enum EStaminaStatus
+// ********** End Enum EStaminaStatus **************************************************************
 
-// Begin Class AMainPlayer Function AttackEnd
+// ********** Begin Class AMainPlayer Function AttackEnd *******************************************
 struct Z_Construct_UFunction_AMainPlayer_AttackEnd_Statics
 {
 #if WITH_METADATA
@@ -163,7 +165,7 @@ struct Z_Construct_UFunction_AMainPlayer_AttackEnd_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_AttackEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "AttackEnd", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_AttackEnd_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_AttackEnd_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_AttackEnd_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "AttackEnd", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_AttackEnd_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_AttackEnd_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AMainPlayer_AttackEnd()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -180,9 +182,9 @@ DEFINE_FUNCTION(AMainPlayer::execAttackEnd)
 	P_THIS->AttackEnd();
 	P_NATIVE_END;
 }
-// End Class AMainPlayer Function AttackEnd
+// ********** End Class AMainPlayer Function AttackEnd *********************************************
 
-// Begin Class AMainPlayer Function DeathEnd
+// ********** Begin Class AMainPlayer Function DeathEnd ********************************************
 struct Z_Construct_UFunction_AMainPlayer_DeathEnd_Statics
 {
 #if WITH_METADATA
@@ -192,7 +194,7 @@ struct Z_Construct_UFunction_AMainPlayer_DeathEnd_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_DeathEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "DeathEnd", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_DeathEnd_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_DeathEnd_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_DeathEnd_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "DeathEnd", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_DeathEnd_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_DeathEnd_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AMainPlayer_DeathEnd()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -209,9 +211,9 @@ DEFINE_FUNCTION(AMainPlayer::execDeathEnd)
 	P_THIS->DeathEnd();
 	P_NATIVE_END;
 }
-// End Class AMainPlayer Function DeathEnd
+// ********** End Class AMainPlayer Function DeathEnd **********************************************
 
-// Begin Class AMainPlayer Function IncrementCoin
+// ********** Begin Class AMainPlayer Function IncrementCoin ***************************************
 struct Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics
 {
 	struct MainPlayer_eventIncrementCoin_Parms
@@ -232,7 +234,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMainP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::NewProp_Amount,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "IncrementCoin", nullptr, nullptr, Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::MainPlayer_eventIncrementCoin_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "IncrementCoin", Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::MainPlayer_eventIncrementCoin_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMainPlayer_IncrementCoin_Statics::MainPlayer_eventIncrementCoin_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMainPlayer_IncrementCoin()
 {
@@ -251,9 +253,9 @@ DEFINE_FUNCTION(AMainPlayer::execIncrementCoin)
 	P_THIS->IncrementCoin(Z_Param_Amount);
 	P_NATIVE_END;
 }
-// End Class AMainPlayer Function IncrementCoin
+// ********** End Class AMainPlayer Function IncrementCoin *****************************************
 
-// Begin Class AMainPlayer Function IncrementHealth
+// ********** Begin Class AMainPlayer Function IncrementHealth *************************************
 struct Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics
 {
 	struct MainPlayer_eventIncrementHealth_Parms
@@ -274,7 +276,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMainP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::NewProp_Amount,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "IncrementHealth", nullptr, nullptr, Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::MainPlayer_eventIncrementHealth_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "IncrementHealth", Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::MainPlayer_eventIncrementHealth_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMainPlayer_IncrementHealth_Statics::MainPlayer_eventIncrementHealth_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMainPlayer_IncrementHealth()
 {
@@ -293,9 +295,9 @@ DEFINE_FUNCTION(AMainPlayer::execIncrementHealth)
 	P_THIS->IncrementHealth(Z_Param_Amount);
 	P_NATIVE_END;
 }
-// End Class AMainPlayer Function IncrementHealth
+// ********** End Class AMainPlayer Function IncrementHealth ***************************************
 
-// Begin Class AMainPlayer Function LoadGame
+// ********** Begin Class AMainPlayer Function LoadGame ********************************************
 struct Z_Construct_UFunction_AMainPlayer_LoadGame_Statics
 {
 	struct MainPlayer_eventLoadGame_Parms
@@ -321,7 +323,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMainP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::NewProp_SetPosition,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "LoadGame", nullptr, nullptr, Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::MainPlayer_eventLoadGame_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "LoadGame", Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::MainPlayer_eventLoadGame_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMainPlayer_LoadGame_Statics::MainPlayer_eventLoadGame_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMainPlayer_LoadGame()
 {
@@ -340,9 +342,9 @@ DEFINE_FUNCTION(AMainPlayer::execLoadGame)
 	P_THIS->LoadGame(Z_Param_SetPosition);
 	P_NATIVE_END;
 }
-// End Class AMainPlayer Function LoadGame
+// ********** End Class AMainPlayer Function LoadGame **********************************************
 
-// Begin Class AMainPlayer Function PlaySwingSound
+// ********** Begin Class AMainPlayer Function PlaySwingSound **************************************
 struct Z_Construct_UFunction_AMainPlayer_PlaySwingSound_Statics
 {
 #if WITH_METADATA
@@ -352,7 +354,7 @@ struct Z_Construct_UFunction_AMainPlayer_PlaySwingSound_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_PlaySwingSound_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "PlaySwingSound", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_PlaySwingSound_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_PlaySwingSound_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_PlaySwingSound_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "PlaySwingSound", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_PlaySwingSound_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_PlaySwingSound_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AMainPlayer_PlaySwingSound()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -369,9 +371,9 @@ DEFINE_FUNCTION(AMainPlayer::execPlaySwingSound)
 	P_THIS->PlaySwingSound();
 	P_NATIVE_END;
 }
-// End Class AMainPlayer Function PlaySwingSound
+// ********** End Class AMainPlayer Function PlaySwingSound ****************************************
 
-// Begin Class AMainPlayer Function SaveGame
+// ********** Begin Class AMainPlayer Function SaveGame ********************************************
 struct Z_Construct_UFunction_AMainPlayer_SaveGame_Statics
 {
 #if WITH_METADATA
@@ -381,7 +383,7 @@ struct Z_Construct_UFunction_AMainPlayer_SaveGame_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_SaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "SaveGame", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_SaveGame_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_SaveGame_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_SaveGame_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "SaveGame", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_SaveGame_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_SaveGame_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AMainPlayer_SaveGame()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -398,9 +400,9 @@ DEFINE_FUNCTION(AMainPlayer::execSaveGame)
 	P_THIS->SaveGame();
 	P_NATIVE_END;
 }
-// End Class AMainPlayer Function SaveGame
+// ********** End Class AMainPlayer Function SaveGame **********************************************
 
-// Begin Class AMainPlayer Function ShowPickupLocations
+// ********** Begin Class AMainPlayer Function ShowPickupLocations *********************************
 struct Z_Construct_UFunction_AMainPlayer_ShowPickupLocations_Statics
 {
 #if WITH_METADATA
@@ -410,7 +412,7 @@ struct Z_Construct_UFunction_AMainPlayer_ShowPickupLocations_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_ShowPickupLocations_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "ShowPickupLocations", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_ShowPickupLocations_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_ShowPickupLocations_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainPlayer_ShowPickupLocations_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMainPlayer, nullptr, "ShowPickupLocations", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainPlayer_ShowPickupLocations_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainPlayer_ShowPickupLocations_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AMainPlayer_ShowPickupLocations()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -427,9 +429,9 @@ DEFINE_FUNCTION(AMainPlayer::execShowPickupLocations)
 	P_THIS->ShowPickupLocations();
 	P_NATIVE_END;
 }
-// End Class AMainPlayer Function ShowPickupLocations
+// ********** End Class AMainPlayer Function ShowPickupLocations ***********************************
 
-// Begin Class AMainPlayer
+// ********** Begin Class AMainPlayer **************************************************************
 void AMainPlayer::StaticRegisterNativesAMainPlayer()
 {
 	UClass* Class = AMainPlayer::StaticClass();
@@ -445,10 +447,34 @@ void AMainPlayer::StaticRegisterNativesAMainPlayer()
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AMainPlayer);
+FClassRegistrationInfo Z_Registration_Info_UClass_AMainPlayer;
+UClass* AMainPlayer::GetPrivateStaticClass()
+{
+	using TClass = AMainPlayer;
+	if (!Z_Registration_Info_UClass_AMainPlayer.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("MainPlayer"),
+			Z_Registration_Info_UClass_AMainPlayer.InnerSingleton,
+			StaticRegisterNativesAMainPlayer,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_AMainPlayer.InnerSingleton;
+}
 UClass* Z_Construct_UClass_AMainPlayer_NoRegister()
 {
-	return AMainPlayer::StaticClass();
+	return AMainPlayer::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_AMainPlayer_Statics
 {
@@ -638,14 +664,14 @@ struct Z_Construct_UClass_AMainPlayer_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMainPlayer_AttackEnd, "AttackEnd" }, // 542758902
-		{ &Z_Construct_UFunction_AMainPlayer_DeathEnd, "DeathEnd" }, // 1429543676
-		{ &Z_Construct_UFunction_AMainPlayer_IncrementCoin, "IncrementCoin" }, // 3779044967
-		{ &Z_Construct_UFunction_AMainPlayer_IncrementHealth, "IncrementHealth" }, // 863145393
-		{ &Z_Construct_UFunction_AMainPlayer_LoadGame, "LoadGame" }, // 1124622872
-		{ &Z_Construct_UFunction_AMainPlayer_PlaySwingSound, "PlaySwingSound" }, // 44910343
-		{ &Z_Construct_UFunction_AMainPlayer_SaveGame, "SaveGame" }, // 187283368
-		{ &Z_Construct_UFunction_AMainPlayer_ShowPickupLocations, "ShowPickupLocations" }, // 605604631
+		{ &Z_Construct_UFunction_AMainPlayer_AttackEnd, "AttackEnd" }, // 4066936932
+		{ &Z_Construct_UFunction_AMainPlayer_DeathEnd, "DeathEnd" }, // 2331856627
+		{ &Z_Construct_UFunction_AMainPlayer_IncrementCoin, "IncrementCoin" }, // 4260000314
+		{ &Z_Construct_UFunction_AMainPlayer_IncrementHealth, "IncrementHealth" }, // 3583372425
+		{ &Z_Construct_UFunction_AMainPlayer_LoadGame, "LoadGame" }, // 2476985301
+		{ &Z_Construct_UFunction_AMainPlayer_PlaySwingSound, "PlaySwingSound" }, // 1774587030
+		{ &Z_Construct_UFunction_AMainPlayer_SaveGame, "SaveGame" }, // 1944046336
+		{ &Z_Construct_UFunction_AMainPlayer_ShowPickupLocations, "ShowPickupLocations" }, // 445608949
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -745,7 +771,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AMainPlayer_Statics::Cl
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AMainPlayer_Statics::PropPointers),
 	0,
-	0x009000A4u,
+	0x009001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainPlayer_Statics::Class_MetaDataParams), Z_Construct_UClass_AMainPlayer_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_AMainPlayer()
@@ -756,28 +782,25 @@ UClass* Z_Construct_UClass_AMainPlayer()
 	}
 	return Z_Registration_Info_UClass_AMainPlayer.OuterSingleton;
 }
-template<> RPGCOMBAT_API UClass* StaticClass<AMainPlayer>()
-{
-	return AMainPlayer::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(AMainPlayer);
 AMainPlayer::~AMainPlayer() {}
-// End Class AMainPlayer
+// ********** End Class AMainPlayer ****************************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h__Script_RPGCombat_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EMovementStatus_StaticEnum, TEXT("EMovementStatus"), &Z_Registration_Info_UEnum_EMovementStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3060665588U) },
 		{ EStaminaStatus_StaticEnum, TEXT("EStaminaStatus"), &Z_Registration_Info_UEnum_EStaminaStatus, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2306614456U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMainPlayer, AMainPlayer::StaticClass, TEXT("AMainPlayer"), &Z_Registration_Info_UClass_AMainPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainPlayer), 1508990754U) },
+		{ Z_Construct_UClass_AMainPlayer, AMainPlayer::StaticClass, TEXT("AMainPlayer"), &Z_Registration_Info_UClass_AMainPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainPlayer), 1363369650U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h_3494957081(TEXT("/Script/RPGCombat"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h__Script_RPGCombat_3980731344(TEXT("/Script/RPGCombat"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h__Script_RPGCombat_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h__Script_RPGCombat_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h_Statics::EnumInfo));
-// End Registration
+	Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h__Script_RPGCombat_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_RPG_Combat_RPGCombat_Source_RPGCombat_MainPlayer_h__Script_RPGCombat_Statics::EnumInfo));
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
